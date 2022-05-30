@@ -1,0 +1,26 @@
+(pytorch) lihuiqian@amax:~/mycode/test3$ python detect.py
+detect: weights=runs/train/exp/weights/best.pt, source=data/images, data=data/VOC.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False
+requirements: opencv-python>=4.1.1 not found and is required by YOLOv5, attempting auto-update...
+requirements: 'pip install opencv-python>=4.1.1' skipped (offline)
+YOLOv5 🚀 2022-5-14 torch 1.10.1+cu113 CUDA:0 (NVIDIA GeForce RTX 3090, 24268MiB)
+
+Fusing layers... 
+Model summary: 213 layers, 7012822 parameters, 0 gradients
+……
+video 1/1 (607/609) /home/lihuiqian/mycode/test3/data/images/朱有堂_002.mp4: 608x640 1 polyp, Done. (0.010s)
+video 1/1 (608/609) /home/lihuiqian/mycode/test3/data/images/朱有堂_002.mp4: 608x640 1 polyp, Done. (0.010s)
+video 1/1 (609/609) /home/lihuiqian/mycode/test3/data/images/朱有堂_002.mp4: 608x640 1 polyp, Done. (0.010s)
+Speed: 0.5ms pre-process, 10.2ms inference, 0.5ms NMS per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/exp
+
+Speed: 0.5ms pre-process, 10.5ms inference, 0.3ms NMS per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/exp2
+
+
+Speed: 0.4ms pre-process, 10.8ms inference, 0.4ms NMS per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/exp3
+
+
+FPS: 48.5
+Speed: 0.5ms pre-process, 11.4ms inference, 0.5ms NMS per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/exp6
