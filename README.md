@@ -24,7 +24,8 @@ yolov5 test.py val.py detec.py 区别在哪里呢?  [🔗](https://blog.csdn.net
 
 ### 3.超大数据集上训练停在epoch0不动的问题
 
-把img改成416，batchsize改成1，workers改成0，能改的都往小里改改看
+~把img改成416，batchsize改成1，workers改成0，能改的都往小里改改看~
+多GPU分布式数据并行训练[🔗](https://blog.csdn.net/u011922698/article/details/123244505): python -m torch.distributed.launch --nproc_per_node 2 train.py
 
 ### 4.视频检测假阳性过多问题
 
