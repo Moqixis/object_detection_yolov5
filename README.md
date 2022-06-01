@@ -21,3 +21,12 @@ yolov5 test.py val.py detec.py 区别在哪里呢?  [🔗](https://blog.csdn.net
 ### 2.FPS计算
 
 作者给了回答，见👉https://github.com/ultralytics/yolov5/discussions/6713
+
+### 3.超大数据集上训练停在epoch0不动的问题
+
+把img改成416，batchsize改成1，workers改成0，能改的都往小里改改看
+
+### 4.视频检测假阳性过多问题
+
+后处理：连续五帧内没有阳性则认为第五帧是假阳，直接输出原图
+跳帧（实现了再补充）
