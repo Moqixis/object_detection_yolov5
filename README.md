@@ -26,7 +26,13 @@ yolov5 test.py val.py detec.py 区别在哪里呢?  [🔗](https://blog.csdn.net
 
 ~把img改成416，batchsize改成1，workers改成0，能改的都往小里改改看~【训练太慢了！！！】
 
-多GPU分布式数据并行训练[🔗](https://blog.csdn.net/u011922698/article/details/123244505): python -m torch.distributed.launch --nproc_per_node 2 train.py
+多GPU分布式数据并行训练[🔗](https://blog.csdn.net/u011922698/article/details/123244505): 
+
+python -m torch.distributed.launch --nproc_per_node 2 train.py
+
+上面那个torch.distributed.launch好像要废弃了，可以用下面这句
+
+torchrun --nproc_per_node=2 train.py
 
 ### 4.视频检测假阳性过多问题
 
