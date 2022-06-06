@@ -18,6 +18,14 @@ yolov5 test.py val.py detec.py 区别在哪里呢?  [🔗](https://blog.csdn.net
 
 ☑YOLOV5源码的详细解读   [🔗](https://blog.csdn.net/BGMcat/article/details/120930016)
 
+
+手把手带你调参Yolo v5 (v6.1)（一）[🔗](https://blog.csdn.net/weixin_43694096/article/details/124378167)
+
+手把手带你调参Yolo v5 (v6.1)（二）[🔗](https://blog.csdn.net/weixin_43694096/article/details/124411509)
+
+yolov5-6.0/6.1加入SE、CBAM、CA注意力机制（理论及代码）[🔗](https://blog.csdn.net/zqt321/article/details/123647444)
+
+
 ### 2.FPS计算
 
 作者给了回答，见👉https://github.com/ultralytics/yolov5/discussions/6713
